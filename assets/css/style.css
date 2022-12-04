@@ -1,0 +1,328 @@
+:root{
+    --primary:#fff;
+    --secondary:rgb(39, 33, 107);
+    --third:rgb(221, 221, 221);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+body{
+    scroll-behavior:smooth;
+}
+/* THE BUTTON THAT TAKES TO THE TOP */
+.top{
+    position: fixed;
+    background:none;
+    bottom:20px;
+    right:10px;
+    z-index: 99;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    padding:0px;
+    width:50px;
+    height:50px;
+    font-size:50px;
+    border-radius: 50%;
+    display:none;
+}
+.top i{
+    color:var(--secondary);
+}
+.top:hover{
+    transform: scale(1.1);
+}
+/* Navigation */
+.navbar-brand p{
+    color:var(--secondary);
+    font-weight:600;
+    font-size:30px;
+    margin-left:40px;
+}
+.collapse{
+    justify-content:right;
+    padding-right:15%;
+}
+.nav-item{
+    margin-right:3%;
+}
+.nav-link{
+    color:unset !important;
+    font-size:15px;
+    letter-spacing:0.05rem;
+    text-transform:uppercase;
+}
+.nav-link:hover{
+    color:var(--secondary) !important;
+    text-decoration:underline;
+}
+/* Home page */
+.home{
+   padding:3% 10% 0%;
+   justify-content: center;
+    background-image:url('../image/entoto-park.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
+.home-image{
+    width:100%;
+    height:100%;
+}
+.home-intro{
+    background-color: var(--primary);
+}
+.intro-container{
+    padding:5% 5% 5% 7%;
+    line-height:2rem;
+    color:var(--secondary);
+}
+.intro-container h2{
+    font-weight:600;
+}
+.intro-container h3{
+    font-size:23px;
+    padding-left:2%;
+}
+.intro-container h4{
+    font-weight:600;
+    font-size:18px;
+    padding-left:5%;
+}
+.intro-container h4 ~ p{
+    padding-left:5%;
+}
+/* Introduction */
+.int{
+    text-align: center;
+    padding:0% 17.5%;
+    background-color: var(--third);
+}
+.int-social{
+background-color: var(--secondary);
+height:70px;
+padding-top:3%;
+}
+.int-social i{
+    font-size: 30px;
+    margin-right: 5%;
+    color:var(--third);
+}
+.int-introduce{
+padding:4%;
+}
+.int-name{
+    padding-bottom:2%;
+    color:var(--secondary);
+    font-weight: 600;
+}
+.int-introduce p{
+    padding:0% 13%;
+    font-size:18px;
+}
+/* Experience & Education */
+.ex-ed{
+    padding:3% 15% 0%;
+}
+.ex-ed h3{
+    padding-bottom:8%;
+}
+.exper-educ > div{
+    padding-bottom:15%;
+}
+.ex-ed .note{
+    padding-left:15px;
+    margin-left:0px;
+    background-color:var(--third);
+    max-width:28%;
+    border-radius:20px;
+    font-weight:600;
+}
+.ex-ed .note::before{
+    font-family:"FontAwesome";
+    content:'\f290';
+    color:var(--third);
+    text-align:center;
+    font-size:20px;
+    width:35px;
+    height:35px;
+    display:block;
+    position:absolute;
+    margin-left:-60px;
+    margin-top:-5px;
+    background-color:var(--secondary);
+    border-radius:50%;
+}
+.ex-ed h4{
+    color:var(--secondary);
+    font-weight:600;
+    font-size:22px;
+}
+/* Clients */
+.clients{
+    text-align: center;
+    padding:3% 0%;
+}
+.clients h3{
+    padding:1.5%;
+    background-color:var(--secondary);
+    color:var(--third);
+}
+.links{
+color:var(--secondary);
+font-weight:700;
+text-transform: uppercase;
+letter-spacing:0.3rem;
+text-align: center;
+}
+.client-images img{
+    margin-right:10%;
+}
+/* Skills */
+.skills{
+    text-align: center;
+    padding:2% 20% 0%;
+    padding-left:10%;
+    background-color:var(--third);
+}
+.skills h3{
+    padding-left:15%;
+    padding-bottom:2%;
+}
+.skills p{
+    margin-top:5%;
+    padding-bottom:5%;
+    font-size:18px;
+}
+.skills p::after{
+    content: '';
+    width:15%;
+    height:6px;
+    background-color:var(--secondary);
+    display:inline;
+    position: absolute;
+    margin-top:12px;
+    margin-left:6px;
+}
+/* Expertise */
+.exper{
+    padding:2% 5% 3%;
+}
+.exper h3{
+    padding-bottom:3%;
+}
+/* Contact */
+.contact{
+    padding:5%;
+    padding-top:3%;
+    padding-bottom:0%;
+    justify-content:center;
+    column-gap:50px;
+    background-color:var(--third);
+}
+.contact h3{
+    padding-bottom:3%;
+}
+.contact .inputs label{
+    display:grid;
+    padding-bottom:10px;
+}
+.contact .inputs input{
+    height:50px;
+    width:100%;
+    border:1px solid var(--secondary);
+}
+.contact .inputs .half{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    column-gap:20px;  
+}
+.contact .inputs textarea{
+    resize: none;
+    border-collapse:collapse;
+    border:1px solid var(--secondary);
+}
+.contact .inputs button{
+    display: block;
+    width:100%;
+    margin-top:5%;
+    border:none;
+    height:50px;
+    background-color:var(--secondary);
+    color:var(--third);
+    font-size:20px;
+    letter-spacing:.4rem;
+    font-weight:bold;
+}
+.contact .intro-container{
+    padding-top:0%;
+}
+.contact .int-social-images{
+    padding-left:5%;
+}
+.contact .int-social-images i{
+    font-size:20px;
+    margin-right:5%;
+}
+.contact .int-social-images a{
+    color:var(--secondary);
+    font-weight:bold;
+    justify-self:right;
+    margin-left:20%;
+}
+.mb-display{
+    display: none;
+}
+.toggler-icon i{
+    font-size:30px;
+}
+.toggler-icon:focus{
+    outline:none;
+    box-shadow:none;
+}
+/* For devices less than 576 pixels */
+@media(max-width:576px){
+    .collapse{
+        padding-right:0;
+    }
+    .navbar-nav .nav-link{
+        text-align: center;
+        font-weight: bold;
+        font-size:18px;
+        padding-bottom:2%;
+        color:var(--secondary);
+    }
+    .int{
+        padding:0;
+    }
+    .mb-display{
+        display:block;
+    }
+    .mb-display2{
+        display:none;
+    }
+    .skills{
+    padding:0;  
+    text-align: unset;  
+    padding-left: 5%;
+    }
+    .skills p::after{
+        width:60%;
+    }
+    .contact .int-social-images a{
+        margin-left:0;
+    }
+    .ex-ed .note{
+        max-width:40%;
+    }
+}
+/* For Tablets */
+@media(max-width:768){
+    
+}
+/*For Desktop */
+@media(max-width:992){
+    
+}
